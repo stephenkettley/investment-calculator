@@ -7,12 +7,11 @@ const initialUserInput = {
   duration: 10,
 };
 
-const UserInput = () => {
+const UserInput = (props) => {
   const [userInput, setUserInput] = useState(initialUserInput);
   const submitHandler = (event) => {
     event.preventDefault(); // this prevents the browser from reloading the page and restarting our React application
-    // ...
-    console.log("submit");
+    props.onCalculate(userInput);
   };
 
   const resetHandler = () => {
