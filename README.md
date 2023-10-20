@@ -1,2 +1,3 @@
-# investment-calculator
-An investment calculator built using React
+# Investment Calculator
+
+An investment calculator built using React.
